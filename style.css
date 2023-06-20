@@ -1,0 +1,331 @@
+/*Styles for navigation bar*/
+nav {
+	background-color: #80bc00;
+	color: black;
+	padding: 10px;
+	justify-content:right; /* Aligns items to the right */
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: center; /* Aligns list items to the right */
+	margin: 0; /* Removes default margin */
+}
+
+nav ul li {
+	display: inline; /* Displays all items in a horizontal line */
+	margin-right: 10px;	/* Adds spacing between list items */
+}
+
+
+nav ul li a {
+	/* Styles for the navigation links */
+	border: 2px solid black;
+	display: inline-block;
+	padding: 5px;
+	background-color: #1fad1f;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px 10px;
+	font-size: 25px;
+	font-weight: Bold;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background-color: #ccffcc; /* Color change when hovered over */
+}
+
+span{
+	font-style:italic; /* Makes all items with span tag in snakes_species.html italic */
+}
+
+
+ul {
+	text-align: left; /* Aligns the text content of the list items to the left */
+	display: inline-block; /* Displays the unordered list as an inline block */
+	margin: 0 auto; /* Centers the unordered list horizontally within its container */
+	margin-bottom: 10px; /* Adds space after the last list item */
+}
+
+.image { /*Sets properties for all images in snake_species.html */
+
+	display: block; /* Displays the element as a block-level element */
+	margin-top: 10px; /* Add space before the image */
+	margin-bottom: 10px; /* Add space after the image */
+	margin: 0 auto; /* Centers the image horizontally within its container */
+	width: 300px;
+	height: 200px;
+}
+
+table {
+	border-collapse: collapse; /*Collapses borders between table cells*/
+	border: 1px solid black; /* Draws solid black border on table */
+}
+
+th, td {
+	border: 1px solid black; /* Draws a solid black border on the table */
+	padding: 5px; /* Adds 5 pixels of padding inside each cell*/
+	text-align: center; /* Aligns the text to the center*/
+}
+
+h1{
+	text-decoration: underline; /* Underlines all webpage titles */
+}
+
+#table-header {
+  font-size: 25px; /* Increases the font size to 20 pixels */
+  background-color: #4ee44e; /* Sets the background color to light green */
+}
+
+.left {
+  text-align: left; /* Aligns all items in the table on myths_facts.html to the left*/
+  font-size: 18px; /* Sets font size of 18 pixels*/
+  
+}
+	
+.snake-row {
+	display: flex;
+	justify-content: center; /* Sets all content in the rows of gallery.html in the middle*/
+	align-items: center; 
+}
+
+.snake-item {
+	text-align: center;
+	margin: 15px; /*Refers to the space between navigation bar and images*/
+}
+
+.snake-item img {
+	width: 400px; /* Sets dimensions of images in gallery.html */
+	height: 300px;
+	transition: transform 0.3s ease; /* Adds a smooth transition effect when scaling the image */
+}
+
+.snake-item:hover img {
+	transform: scale(1.1); /* Scales the image by 1.1 (10% larger) on hover */
+}
+
+.garter-snake{ 
+	width: 450px; /* Sets width and height for image of garter snake in myths_facts.html */
+	height: 400px;
+	border: 10px solid green; /* Sets border of image 10 px and a soild green color */
+}
+
+.ball-python {
+	width: 450px; /* Sets width and height for image of ball python in myths_facts.html */
+	height: 400px;
+	border: 10px solid brown; /* Sets border of image 10 px and a soild green color */
+}
+
+.corn-snake{
+	width: 450px;
+	height: 400px;
+	border: 10px solid orange;
+}
+
+	/* Center the image container on the page */
+.home-page-container {
+	display: flex;
+	justify-content: right; /* Horizontally centers the content */
+	height: 100vh; /* Take up the full height of the viewport */
+	margin-left: 0.7cm; /* Creates a left margin of 0.7 cm*/
+	margin-right: 0.7cm; /* Creates a right margin of 0.7 cm*/
+	font-size: 15px;
+	font-family: Arial; 
+}
+
+.picture-citations{
+	font-size: 10px;
+}
+
+#home-page-image {
+  width: 1000px;
+  height: 700px;
+  position: absolute;
+  top: 59.99%; /* Centers the image vertically */
+  left: 55%; /* Centers the image horizontally */
+  transform: translate(-50%, -50%); /* Adjusts the position to center the image precisely */
+  z-index: -1; /* Sets a lower stacking order for the image, positioning it behind other elements */
+}
+
+
+.snake-species { /*Styling for Snake Species button*/
+	width: 160px; /* Sets dimensions for buttons in pixels*/
+	height: 120px;
+	background-color: #000000; /* Sets a color of black*/
+	position: absolute; /*Adjusts the position of the square*/
+	top: 11%; /* Positions the square 12% from the top of its containing element */
+	left: 5%; /* Positions the square 5% from the left of its containing element */
+	border-radius: 20px; /* Create rounded corners with a radius of 20px */
+	border: 2px solid white;
+}
+
+.snake-species a {
+	position: absolute;
+	top: 50%; /* Positions the link vertically at the center of the square */
+	left: 50%; /* Positions the link horizontally at the center of the square */
+	transform: translate(-50%, -50%); /* Adjusts the link's position to be perfectly centered */
+	color: white; /* Sets font color to white */
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center; 
+}
+
+.snake-species:hover { /* Changes color of button when hovered over*/
+	background-color: #228900;
+}
+
+.myths-facts { /*Styling for Myths and Facts button*/
+	width: 160px; /* Sets dimensions for buttons in pixels*/
+	height: 120px;
+	background-color: #000000; /* Sets a color of black*/
+	position: absolute; /*Adjusts the position of the square*/
+	top: 30%; /* Positions the square 30% from the top of its containing element */
+	left: 5%; /* Positions the square 5% from the left of its containing element */
+	border-radius: 20px; /* Create rounded corners with a radius of 20px */
+	border: 2px solid white;
+}
+
+
+.myths-facts a {
+	position: absolute;
+	top: 48%; /* Position the link vertically at the center of the square */
+	left: 50%; /* Position the link horizontally at the center of the square */
+	transform: translate(-50%, -50%); /* Adjust the link's position to be perfectly centered */
+	color: white; /* Sets font color to white */
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.myths-facts:hover { /* Changes color of button when hovered over*/
+	background-color: #228900;
+}
+
+.pet-snakes { /*Styling for Pet Snakes button*/
+	width: 160px; /* Sets dimensions for buttons in pixels*/
+	height: 120px;
+	background-color: #000000;
+	position: absolute; /*Adjusts the position of the square*/
+	top: 49%; /* Positions the square 48% from the top of its containing element */
+	left: 5%; /* Positions the square 5% from the left of its containing element */
+	border-radius: 20px; /* Create rounded corners with a radius of 20px */
+	border: 2px solid white;
+}
+
+
+.pet-snakes a {
+	position: absolute;
+	top: 50%; /* Position the link vertically at the center of the square */
+	left: 50%; /* Position the link horizontally at the center of the square */
+	transform: translate(-50%, -50%); /* Adjust the link's position to be perfectly centered */
+	color: white; /* Sets font color to white */
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.pet-snakes:hover { /* Changes color of button when hovered over*/
+	background-color: #228900;
+}
+
+
+.gallery-page { /*Styling for Gallery button*/
+	width: 160px; /* Sets dimensions for buttons in pixels*/
+	height: 120px;
+	background-color: #000000;
+	position: absolute; /*Adjusts the position of the square*/
+	top: 68%; /* Positions the square 66% from the top of its containing element */
+	left: 5%; /* Positions the square 5% from the left of its containing element */
+	border-radius: 20px; /* Create rounded corners with a radius of 20px */
+	border: 2px solid white;
+}
+
+.gallery-page a {
+	position: absolute;
+	top: 50%; /* Position the link vertically at the center of the square */
+	left: 50%; /* Position the link horizontally at the center of the square */
+	transform: translate(-50%, -50%); /* Adjust the link's position to be perfectly centered */
+	color: white; /* Sets font color to white */
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.gallery-page:hover { /* Changes color of button when hovered over*/
+	background-color: #228900;
+}
+
+.references-page { /*Styling for Gallery button*/
+	width: 160px;
+	height: 120px;
+	background-color: #000000;
+	position: absolute; /*Adjusts the position of the square*/
+	top: 87%;
+	left: 5%;
+	border-radius: 20px; /* Create rounded corners with a radius of 20px */
+	border: 2px solid white;
+}
+
+
+.references-page a {
+	position: absolute;
+	top: 50%; /* Positions the link vertically at the center of the square */
+	left: 50%; /* Positions the link horizontally at the center of the square */
+	transform: translate(-50%, -50%); /* Adjust the link's position to be perfectly centered */
+	color: white; /* Sets font color to white */
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.references-page:hover { /* Changes color of button when hovered over */
+	background-color: #228900;
+}
+
+.parent-of-citations { /* Sets div tag parent-of-citations' font-size and width size */
+  font-size: 36px;
+  width: 80%;
+}
+
+.citations { /* Uses relative measurements to set font-size of citations 50% that of its parent tag*/
+  font-size: 50%;
+  margin-bottom: 0.5em;
+}
+
+body {
+	min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+	display: flex; /* Use flexbox layout for the body */
+	flex-direction: column; /* Stack child elements vertically */
+	background-image: url(images/background.jpg);
+	color: black;
+}
+
+.container { /* Positions all elements in the class container*/
+	margin-left: 0.7cm;
+	font-family: Arial;
+	margin-right: 0.7cm;
+	font-size: 15px;
+	flex: 1;
+}
+
+
+
+footer { /* Sets properties for footer tags */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
